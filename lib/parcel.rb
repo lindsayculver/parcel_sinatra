@@ -1,11 +1,12 @@
 class Parcel
-  define_method(:initialize) do |length, height, width, speed, weight|
+  define_method(:initialize) do |length, height, width, speed, weight, gift|
     @length = length
     @height = height
     @width = width
     @speed = speed
     @weight = weight
     @package_volume
+    @gift = gift
 
   end
 
@@ -18,7 +19,7 @@ class Parcel
 
       volume_cost = volume() * 2
 
-        if @speed = 1
+      if @speed = 1
         speed_cost = 5
       elsif @speed = 2
         speed_cost = 2
@@ -28,7 +29,13 @@ class Parcel
 
       cost_weight = @weight * 2
 
-      total_cost = cost_weight + volume_cost + speed_cost
+      if @gift == true
+        gift_cost = 5
+      else
+        gift_cost = 0
+      end
+
+      total_cost = cost_weight + volume_cost + speed_cost + gift_cost
 
   end
 
