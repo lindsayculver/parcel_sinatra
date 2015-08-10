@@ -29,7 +29,7 @@ class Parcel
 
       cost_weight = @weight * 2
 
-      if @gift == true
+      if @gift == 1
         gift_cost = 5
       else
         gift_cost = 0

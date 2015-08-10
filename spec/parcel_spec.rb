@@ -12,12 +12,12 @@ describe(Parcel) do
 
   describe("#cost_to_ship") do
     it("returns the cost based on volume, speed and weight") do
-      test_cost_to_ship = Parcel.new(5, 4, 3, 2, 10, false)
+      test_cost_to_ship = Parcel.new(5, 4, 3, 2, 10, 0)
       expect(test_cost_to_ship.cost_to_ship()).to(eq(145))
     end
 
     it("adds five to the total cost if user wants gift wrapping") do
-      test_cost_to_ship = Parcel.new(5, 4, 3, 2, 10, true)
+      test_cost_to_ship = Parcel.new(5, 4, 3, 2, 10, 1)
       expect(test_cost_to_ship.cost_to_ship()).to(eq(150))
     end
   end
