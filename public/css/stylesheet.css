@@ -1,18 +1,18 @@
 body {
-  background-color: #a63ffd;
+  background-color: #63A5C6;
 }
 
 h1 {
-  color: white;
-  font-family: 'Poiret One', cursive;
+  float: right;
+  color: #FCDEB8;
 }
 
 h2 {
-  color: #afbec5;
-  font-family: 'Poiret One', cursive;
+  text-align: center;
+  color: #0D73A8;
 }
 
-.form-group {
-  color: #397fdb;
-
+h3 {
+  float: right;
+  color: #0D73A8;
 }
